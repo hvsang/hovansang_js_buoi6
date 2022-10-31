@@ -6,6 +6,7 @@ function btnResult() {
         sum += count;
     }
     document.getElementById("infoResult").innerHTML = count;
+    document.getElementById("infoResult").classList.add("alert-success");
 }
 
 function power(a, b) {
@@ -26,6 +27,7 @@ function btnResult2() {
     }
 
     document.getElementById("infoResult2").innerHTML = sum;
+    document.getElementById("infoResult2").classList.add("alert-success");
 }
 
 function btnResult3() {
@@ -35,20 +37,22 @@ function btnResult3() {
         factorial *= i;
     }
     document.getElementById("infoResult3").innerHTML = factorial;
+    document.getElementById("infoResult3").classList.add("alert-success");
 }
 
 function btnResult4() {
     var result = "";
     for (var i = 1; i <= 10; i++) {
         if (i % 2 == 0) {
-            result += "<div style=\"color: white; background-color: blue;\">Div chẵn " + i + "</div>"
+            result += "<div style=\"color: white; background-color: red;\">Div chẵn " + i + "</div>"
         } else {
-            result += "<div style=\"color: white; background-color: red;\">Div lẻ " + i + "</div>"
+            result += "<div style=\"color: white; background-color: blue;\">Div lẻ " + i + "</div>"
 
         }
     }
 
     document.getElementById("infoResult4").innerHTML = result;
+    document.getElementById("infoResult4").classList.add("alert-success");
 }
 
 function primeNumber(n) {
@@ -80,5 +84,6 @@ function btnResult5() {
             prime += " ";
         }
     }
-    console.log(prime);
+    document.getElementById("infoResult5").innerHTML = prime;
+    document.getElementById("infoResult5").classList.add("alert-success");
 }
